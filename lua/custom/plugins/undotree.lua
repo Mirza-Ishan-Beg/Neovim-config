@@ -1,8 +1,7 @@
 return {
   "mbbill/undotree",
-  cmd = "UndotreeToggle",               -- lazy-load on command
-  config = function()
-    -- Optional: set a keymap
-    vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "Toggle undo tree" })
-  end,
+  cmd = "UndotreeToggle",
+  keys = {
+    { "<leader>u", "<cmd>UndotreeToggle<CR>", desc = "Toggle undo tree" },
+  },
 }

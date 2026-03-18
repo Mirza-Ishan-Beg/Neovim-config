@@ -17,3 +17,5 @@ vim.opt.undodir = undodir
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
+vim.g.mapleader = " "
+
