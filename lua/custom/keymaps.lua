@@ -16,5 +16,5 @@ vim.keymap.set("i", "<C-BS>", "<C-w>", map_opts)
 vim.keymap.set({ "n", "v" }, "<C-S-v>", "p", map_opts)       -- normal/visual paste
 vim.keymap.set("i", "<C-S-v>", "<C-r>+", map_opts)           -- insert mode paste
 
--- If you later want to re‑enable the complex Ctrl‑Shift‑arrow mappings,
--- place them here. For now they remain commented as you requested.
+vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = "Use this to see why the line says W or E." })
+
